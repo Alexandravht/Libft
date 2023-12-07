@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
+/*   By: alvohnou <alvohnou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 01:06:28 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/12/05 19:56:29 by alexandravo      ###   ########.fr       */
+/*   Updated: 2023/12/07 21:07:08 by alvohnou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -38,7 +38,7 @@ int	ft_atoi(const char *str)
 	return (out * sign);
 }
 
-//TEST ATOI 
+/*TEST ATOI
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -48,7 +48,7 @@ int main()
 	const char *test2 = "-----1234";
 	const char *test3 = "-1";
 	const char *test4 = "23";
-	
+
 	printf("Test 1: %d\n", ft_atoi(test1));
 	printf("Test 1: %d\n", atoi(test1));
 	printf("Test 2: %d\n", ft_atoi(test2));
@@ -58,3 +58,4 @@ int main()
 	printf("Test 4: %d\n", ft_atoi(test4));
 	printf("Test 4: %d\n", atoi(test4));
 }
+*/

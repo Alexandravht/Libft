@@ -1,25 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alvohnou <alvohnou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/18 00:59:33 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/12/07 21:21:34 by alvohnou         ###   ########.fr       */
+/*   Created: 2023/12/07 22:49:11 by alvohnou          #+#    #+#             */
+/*   Updated: 2023/12/07 23:50:40 by alvohnou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char *s, int fd)
+int count_ligne(const char *s, char c)
 {
+	int	is_word;
 	int	i;
 
 	i = 0;
-	while (s[i] != '\0')
+	is_word = 0;
+	while (s[i])
 	{
-		write(fd, &s[i], 1);
-		i++;
+		if (s[i] == c)
+
 	}
 }
+
+char **ft_split(char const *s, char c)
+{
+	char	**tab;
+	int		ligne_tab;
+	int		i;
+	int		j;
+
+ }

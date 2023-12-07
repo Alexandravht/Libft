@@ -6,16 +6,18 @@
 /*   By: alvohnou <alvohnou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 00:37:48 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/11/18 00:39:25 by alvohnou         ###   ########.fr       */
+/*   Updated: 2023/12/07 21:27:36 by alvohnou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(char *s)
 {
-	int	i;
+	size_t i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 		i++;
 	return (i);
 }
