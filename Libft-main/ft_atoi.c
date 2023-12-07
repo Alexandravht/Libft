@@ -6,9 +6,11 @@
 /*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 01:06:28 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/12/01 17:41:58 by alexandravo      ###   ########.fr       */
+/*   Updated: 2023/12/05 19:56:29 by alexandravo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -19,36 +21,33 @@ int	ft_atoi(const char *str)
 	sign = 1;
 	i = 0;
 	out = 0;
-	if (str[i] == '-')
+	while(str[i] == ' ' || ('\t' <= str[i] && str[i] <= '\r'))
+		i++;
+	if(str[i] == '+')
+		i++;
+	else if (str[i] == '-')
 	{
-		sign = -1;
-	i++;
+		sign *= -1;
+		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		out = ((out * 10) + (str[i] - '0'));
-	i++;
+		i++;
 	}
 	return (out * sign);
 }
 
-/* MANUEL ATOI
-     #include <stdlib.h>
-     int atoi(const char *str);
-
-	La fonction atoi() convertit la portion initiale de la chaîne pointée par str en une représentation de type int.
-*/
-
-/* TEST ATOI 
+//TEST ATOI 
 
 #include <stdio.h>
 #include <stdlib.h>
 int main()
 {
-	const char *test1 = "1234";
+	const char *test1 = "+++++1234";
 	const char *test2 = "-----1234";
 	const char *test3 = "-1";
-	const char *test4 = "00000";
+	const char *test4 = "23";
 	
 	printf("Test 1: %d\n", ft_atoi(test1));
 	printf("Test 1: %d\n", atoi(test1));
@@ -59,4 +58,3 @@ int main()
 	printf("Test 4: %d\n", ft_atoi(test4));
 	printf("Test 4: %d\n", atoi(test4));
 }
-*/

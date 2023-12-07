@@ -6,9 +6,11 @@
 /*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 00:57:17 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/12/01 17:42:06 by alexandravo      ###   ########.fr       */
+/*   Updated: 2023/12/05 19:46:03 by alexandravo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memset(void *ptr, int x, size_t n)
 {

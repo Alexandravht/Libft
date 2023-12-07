@@ -6,9 +6,11 @@
 /*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 00:46:50 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/12/01 17:42:06 by alexandravo      ###   ########.fr       */
+/*   Updated: 2023/12/05 19:46:08 by alexandravo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

@@ -6,9 +6,11 @@
 /*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 00:55:03 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/12/01 17:42:02 by alexandravo      ###   ########.fr       */
+/*   Updated: 2023/12/05 19:46:02 by alexandravo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

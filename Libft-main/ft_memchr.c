@@ -6,10 +6,11 @@
 /*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 00:54:52 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/12/01 17:42:00 by alexandravo      ###   ########.fr       */
+/*   Updated: 2023/12/05 19:46:00 by alexandravo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 void *ft_memchr(const void *s, int c, size_t n);
 {
