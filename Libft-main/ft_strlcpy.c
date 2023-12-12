@@ -6,7 +6,7 @@
 /*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 00:46:50 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/12/05 19:46:08 by alexandravo      ###   ########.fr       */
+/*   Updated: 2023/12/10 20:12:29 by alexandravo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,21 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	int	i;
+	size_t i;
+	int len_src;
 	i = 0;
-
-	if (size > 0) // Tant que la taille est supérieure à 0
+	len_src = ft_strlen(src);
+	if (size > 0)
 	{
-		while(src[i] && i < (size - 1)) // La fonction strlcpy() copie jusqu'à la taille - 1 caractères de la chaîne src
+		while(src[i] && i < (size - 1)) 
 		{
 			dst[i] = src[i];
 			i++;
 		}
-		dst[i] = '\0'; // Terminant le résultat par NUL
+		dst[i] = '\0'; 
 	}
 	i = 0;
 	while (src[i])
 		i++;
-	return (src); // Renvoie la longueur totale de la chaîne qu'elles ont essayé de créer. Pour strlcpy(), cela signifie la longueur de src
+	return (len_src); 
 }

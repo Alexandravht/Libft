@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alvohnou <alvohnou@student.42.fr>          +#+  +:+       +#+        */
+/*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 21:24:06 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/12/07 21:24:09 by alvohnou         ###   ########.fr       */
+/*   Updated: 2023/12/10 20:05:10 by alexandravo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(char *str, int chr)
+char *ft_strchr(const char *str, int chr)
 {
     int i ;
     i = 0;
@@ -20,7 +20,7 @@ char *ft_strchr(char *str, int chr)
     while(str[i])
     {
         if (str[i] == chr)
-            return(&str[i])
+            return((char *)&str[i]);
         else
             i++;
     }
