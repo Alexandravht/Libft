@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
+/*   By: alvohnou <alvohnou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 21:24:06 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/12/10 20:05:10 by alexandravo      ###   ########.fr       */
+/*   Updated: 2023/12/14 19:44:24 by alvohnou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,28 @@ char *ft_strchr(const char *str, int chr)
 
     while(str[i])
     {
-        if (str[i] == chr)
+        if (str[i] == (unsigned char)chr)
             return((char *)&str[i]);
         else
             i++;
     }
-    return(0);
+	if(str[i] == (unsigned char)chr)
+		return((char *)&str[i]);
+	else
+		return (NULL);
 }
+/*
+#include <string.h>
+#include <stdio.h>
+
+int main()
+{
+	char *c;
+	char *c1;
+	char s[] = "tripouille";
+
+	c = ft_strchr(s, 0);
+	c1 = strchr(s, 0);
+	printf("c : %s\n", c);
+	printf("c1 : %s\n", c1);
+}*/
