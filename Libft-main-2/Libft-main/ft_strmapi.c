@@ -6,7 +6,7 @@
 /*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 19:36:45 by alexandravo       #+#    #+#             */
-/*   Updated: 2023/12/12 21:36:55 by alexandravo      ###   ########.fr       */
+/*   Updated: 2023/12/17 16:04:50 by alexandravo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
     while(s[i])
     {
         str[i] = f(i, s[i]);
+        i++;
     }
     str[i] = '\0';
     return(str);

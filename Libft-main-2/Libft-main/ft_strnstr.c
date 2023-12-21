@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alvohnou <alvohnou@student.42.fr>          +#+  +:+       +#+        */
+/*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 21:41:42 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/12/14 23:07:19 by alvohnou         ###   ########.fr       */
+/*   Updated: 2023/12/17 11:52:31 by alexandravo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

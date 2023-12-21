@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alvohnou <alvohnou@student.42.fr>          +#+  +:+       +#+        */
+/*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 00:48:39 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/12/14 23:28:28 by alvohnou         ###   ########.fr       */
+/*   Updated: 2023/12/17 12:24:01 by alexandravo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,31 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	i;
-	int	len_dst;
-	int len_src;
+	size_t i;
+	size_t len_dst;
+	size_t len_src;
 
 	i = 0;
 	len_dst = ft_strlen(dst);
 	len_src = ft_strlen(src);
-	if (size > 0 || dst[i])
-	{
-		while (src[i] && (int)i < (len_dst - 1) && i < size)
-		{
-			dst[len_dst] = src[i];
-			i++;
-			len_dst++;
-		}
-		dst[i] = '\0';
-	}
-	return (len_dst + i);
-}
 
+	while (src[i] && len_dst + i < size - 1 && size > len_dst)
+	{
+		dst[len_dst + i] = src[i];
+		i++;
+	}
+
+	if (size > 0 && len_dst < size)
+	{
+		dst[len_dst + i] = '\0';
+		return len_dst + len_src;
+	}
+
+	if (size <= len_dst)
+		return size + len_src;
+
+	return len_dst + len_src;
+}
 /*
 	if (size == 0)
 		return (len_dst);
