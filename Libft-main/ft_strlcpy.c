@@ -6,7 +6,7 @@
 /*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 00:46:50 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/12/10 20:12:29 by alexandravo      ###   ########.fr       */
+/*   Updated: 2023/12/17 19:25:31 by alexandravo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,5 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		}
 		dst[i] = '\0'; 
 	}
-	i = 0;
-	while (src[i])
-		i++;
 	return (len_src); 
 }

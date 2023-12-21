@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alvohnou <alvohnou@student.42.fr>          +#+  +:+       +#+        */
+/*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 00:18:57 by alvohnou          #+#    #+#             */
-/*   Updated: 2023/12/07 21:13:35 by alvohnou         ###   ########.fr       */
+/*   Updated: 2023/12/13 13:22:21 by alexandravo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,5 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
             return(str1[i] - str2[i]);
         i++;
     }
-    return(str1[i] - str2[i]);
+    return(0);
 }
-
-/* MANUEL MEMCHR
-     #include <string.h>
-     int memcmp(const void *s1, const void *s2, size_t n);
-
-    La fonction memcmp() compare la chaîne d'octets s1 avec la chaîne d'octets s2. On suppose que les deux chaînes ont une longueur de n octets.
-*/

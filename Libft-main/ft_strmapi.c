@@ -6,14 +6,13 @@
 /*   By: alexandravohnout <alexandravohnout@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 19:36:45 by alexandravo       #+#    #+#             */
-/*   Updated: 2023/12/10 19:59:22 by alexandravo      ###   ########.fr       */
+/*   Updated: 2023/12/17 16:04:50 by alexandravo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strmapi(char const *s, char (*f)(unsigned
-int, char))
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
     int i;
     int length;
@@ -27,6 +26,7 @@ int, char))
     while(s[i])
     {
         str[i] = f(i, s[i]);
+        i++;
     }
     str[i] = '\0';
     return(str);
